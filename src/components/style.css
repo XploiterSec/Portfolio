@@ -1,0 +1,53 @@
+body {
+    background-color: #0f0f0f;
+    font-family: 'Courier New', monospace;
+}
+
+.neon-text {
+    color: #00ffff;
+    text-shadow: 0 0 5px #294444,
+                 0 0 10px #00ffff,
+                 0 0 20px #00ffff;
+}
+
+.hero {
+    height: 90vh;
+}
+
+.sec-btn{
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.progress {
+    height: 25px;
+    border: 1px solid #00ffff;
+}
+
+.progress-bar {
+    font-weight: bold;
+    box-shadow: 0 0 10px currentColor,
+                0 0 20px currentColor;
+}
+
+.progress-animated {
+    animation: glowBar 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowBar {
+    from {
+        box-shadow: 0 0 5px;
+    }
+    to {
+        box-shadow: 0 0 20px;
+    }
+}
+
+.project-card{
+    display: flex;
+    justify-content: space-between;
+}
